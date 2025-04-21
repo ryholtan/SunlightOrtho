@@ -1,0 +1,104 @@
+ body {
+     margin: 0;
+     font-family: 'Quicksand', sans-serif;
+     background: url("images/background.png") no-repeat center center fixed;
+     background-size: cover;
+     color: #6a008a;
+ }
+
+ header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 1rem;
+     background-color: rgba(255, 255, 255, 0.85);
+     flex-wrap: wrap;
+ }
+
+ .logo {
+     font-family: 'Pacifico', cursive;
+     font-size: 2rem;
+     color: #ff69b4;
+     text-shadow: 1px 1px #ffa500;
+     flex-grow: 1;
+     text-align: center;
+ }
+
+ nav {
+     display: flex;
+     gap: 1rem;
+     flex-wrap: wrap;
+ }
+
+ nav a {
+     text-decoration: none;
+     color: #6a008a;
+     font-weight: bold;
+ }
+
+ .section {
+     background-color: rgba(255, 255, 255, 0.9);
+     margin: 1rem;
+     padding: 1rem;
+     border-radius: 1rem;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+ }
+
+ .section h2 {
+     margin-top: 0;
+ }
+
+ .book-now {
+     display: inline-block;
+     margin-top: 1rem;
+     background-color: #ff69b4;
+     color: white;
+     padding: 0.5rem 1rem;
+     border-radius: 2rem;
+     text-decoration: none;
+     font-weight: bold;
+ }
+
+ .main-book-now {
+     display: block;
+     width: fit-content;
+     margin: 2rem auto;
+     background-color: #ff69b4;
+     color: white;
+     padding: 1rem 2rem;
+     font-size: 1.2rem;
+     border-radius: 2rem;
+     text-decoration: none;
+     font-weight: bold;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+ }
+
+ footer {
+     background-color: rgba(255, 255, 255, 0.85);
+     text-align: center;
+     padding: 1rem;
+     margin-top: 2rem;
+     font-size: 0.9rem;
+     color: #6a008a;
+ }
+
+ .accordion {
+     cursor: pointer;
+     font-weight: bold;
+     font-size: 1.2rem;
+     border: none;
+     background: none;
+     width: 100%;
+     text-align: left;
+     padding: 1rem;
+ }
+
+ .panel {
+     display: none;
+ }
+
+ @media (min-width: 768px) {
+     .panel {
+         display: block !important;
+     }
+ }

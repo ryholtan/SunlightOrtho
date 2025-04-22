@@ -24,6 +24,14 @@
      text-align: center;
  }
 
+ .logo img {
+     max-height: 60px;
+     /* You can adjust this */
+     width: auto;
+     height: auto;
+     display: block;
+ }
+
  nav {
      display: flex;
      gap: 1rem;
@@ -51,7 +59,7 @@
  .book-now {
      display: inline-block;
      margin-top: 1rem;
-     background-color: #ff69b4;
+     background-color: #a62bca;
      color: white;
      padding: 0.5rem 1rem;
      border-radius: 2rem;
@@ -63,7 +71,7 @@
      display: block;
      width: fit-content;
      margin: 2rem auto;
-     background-color: #ff69b4;
+     background-color: #a62bca;
      color: white;
      padding: 1rem 2rem;
      font-size: 1.2rem;
@@ -79,7 +87,7 @@
      padding: 1rem;
      margin-top: 2rem;
      font-size: 0.9rem;
-     color: #6a008a;
+     color: #c7a2c7;
  }
 
  .accordion {
@@ -97,8 +105,75 @@
      display: none;
  }
 
+ @media (max-width: 350px) {
+     .logo img {
+         max-height: 20px;
+     }
+ }
+
  @media (min-width: 768px) {
      .panel {
          display: block !important;
      }
+ }
+
+ /* Desktop - default */
+ nav.nav-menu {
+     display: flex;
+     gap: 1rem;
+     align-items: center;
+ }
+
+ /* Hamburger Button - Hidden by default */
+ .menu-toggle {
+     display: none;
+     font-size: 2rem;
+     background: none;
+     border: none;
+     color: #6a008a;
+     cursor: pointer;
+ }
+
+ /* Mobile Styles */
+ @media (max-width: 768px) {
+     nav.nav-menu {
+         display: none;
+         flex-direction: column;
+         width: 100%;
+         background-color: rgba(255, 255, 255, 0.95);
+         padding: 1rem 0;
+         text-align: center;
+     }
+
+     nav.nav-menu.show {
+         display: flex;
+     }
+
+     .menu-toggle {
+         display: block;
+         margin-left: auto;
+     }
+
+     header {
+         flex-direction: column;
+         align-items: flex-start;
+     }
+
+     .logo {
+         order: -1;
+         text-align: left;
+         width: 100%;
+     }
+ }
+
+ .about-section {
+     text-align: center;
+ }
+
+ .family-photo {
+     max-width: 100%;
+     height: auto;
+     border-radius: 1rem;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+     margin: 1rem 0;
  }

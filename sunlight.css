@@ -136,61 +136,6 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* ========== Responsive ========== */
-@media (min-width: 768px) {
-    .panel {
-        display: block !important;
-    }
-
-    .about-wrapper {
-        flex-direction: row;
-        align-items: flex-start;
-        text-align: left;
-    }
-
-    .family-photo {
-        max-width: 30%;
-    }
-}
-
-@media (max-width: 768px) {
-    nav.nav-menu {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: rgba(255, 255, 255, 0.95);
-        padding: 1rem 0;
-        text-align: center;
-    }
-
-    nav.nav-menu.show {
-        display: flex;
-    }
-
-    .menu-toggle {
-        display: block;
-        margin-left: auto;
-    }
-
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .logo {
-        order: -1;
-        text-align: left;
-        width: 100%;
-    }
-}
-
-@media (max-width: 350px) {
-    .logo img {
-        max-height: 20px;
-    }
-}
-
-
 /* Additional CSS for Learn More page */
 .learn-section {
     background-color: rgba(255, 255, 255, 0.9);
@@ -237,3 +182,63 @@ footer {
         flex: 2;
     }
 }
+
+/* ========== Responsive ========== */
+@media (min-width: 768px) {
+    .panel {
+        display: block !important;
+    }
+
+    .about-wrapper {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .family-photo {
+        max-width: 30%;
+    }
+
+    .learn-section img {
+        max-width: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav.nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.95);
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+    nav.nav-menu.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        order: -1;
+        text-align: left;
+        width: 100%;
+    }
+}
+
+@media (max-width: 350px) {
+    .logo img {
+        max-height: 20px;
+    }
+}
+
+
